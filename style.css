@@ -1,0 +1,48 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+
+	background: linear-gradient(
+		-45deg, #FFCD00, #0080FF);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0 50%;
+	}
+	50% {
+		background-position: 100 50%;
+	}
+	100% {
+		background-position: 0 50%;
+	}
+}
+
+.title {
+	font-family: Arial, sans-serif;
+	font-size: 4rem;
+	color: "#000";
+
+	background: linear-gradient(45deg, blue, yellow);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.btn {
+	font-size: 100px;
+	font-family: monospace;
+	color: #fff;
+	background: linear-gradient(to left, #FFD100, #007CFF);
+	text-decoration: none;
+	padding: 20px 70px;
+}
